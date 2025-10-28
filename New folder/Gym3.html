@@ -1,0 +1,262 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>IronCore Gym — Gallery</title>
+		<meta name="description" content="IronCore Gym — classes, pricing and gallery" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="site-header">
+			<nav class="nav container">
+				<a class="brand" href="#">
+					<!-- inline SVG gym logo -->
+					<svg class="logo" viewBox="0 0 100 100" aria-hidden="true">
+						<defs>
+							<linearGradient id="g1" x1="0" x2="1">
+								<stop offset="0%" stop-color="#ff6b6b"></stop>
+								<stop offset="100%" stop-color="#f06595"></stop>
+							</linearGradient>
+						</defs>
+						<rect x="0" y="28" width="100" height="20" rx="6" fill="url(#g1)" />
+						<rect x="18" y="10" width="8" height="80" rx="4" fill="#222"/>
+						<rect x="74" y="10" width="8" height="80" rx="4" fill="#222"/>
+						<circle cx="50" cy="50" r="14" fill="#222"/>
+					</svg>
+					<span class="brand-name">IronCore</span>
+				</a>
+
+				<button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+					<svg class="icon-hamburger" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+						<path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+					</svg>
+				</button>
+
+				<ul class="nav-links">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#pricing">Pricing</a></li>
+					<li><a href="#gallery">Gallery</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section id="home" class="hero container">
+				<h1>Train hard. Stay consistent.</h1>
+				<p>Welcome to IronCore — community-powered strength & conditioning.</p>
+				<a class="btn" href="#gallery">See Our Gym</a>
+			</section>
+
+			<section class="full-width-gym-image">
+				<div class="overlay"></div>
+				<img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1920" 
+					 alt="Modern gym interior with equipment" 
+					 class="gym-image"
+					 loading="lazy">
+				<div class="image-content container">
+					<h2>Transform Your Life</h2>
+					<p>Premium equipment. Expert trainers. Your fitness journey starts here.</p>
+				</div>
+			</section>
+
+			<section id="gallery" class="gallery container">
+				<h2 class="section-title">Our gyms — infinite gallery</h2>
+
+				<!-- Carousel 1: left-to-right scrolling -->
+				<div class="carousel" data-speed="18">
+					<div class="track">
+						<!-- cards repeated; JS will duplicate if needed -->
+						<article class="card">
+							<div class="thumb thumb-a">A</div>
+							<h3>IronCore Downtown</h3>
+							<p>Weightlifting and classes</p>
+						</article>
+						<article class="card">
+							<div class="thumb thumb-b">B</div>
+							<h3>IronCore Riverside</h3>
+							<p>Open gym and cardio</p>
+						</article>
+						<article class="card">
+							<div class="thumb thumb-c">C</div>
+							<h3>IronCore Uptown</h3>
+							<p>Functional training</p>
+						</article>
+						<article class="card">
+							<div class="thumb thumb-d">D</div>
+							<h3>IronCore Eastside</h3>
+							<p>Strength & conditioning</p>
+						</article>
+						<article class="card">
+							<div class="thumb thumb-e">E</div>
+							<h3>IronCore Westside</h3>
+							<p>24/7 access</p>
+						</article>
+					</div>
+				</div>
+
+						<!-- single carousel (one layer) -->
+						<!-- keep the first carousel only for a single-layer infinite gallery -->
+			</section>
+
+			<section class="full-width-gym-image">
+				<div class="overlay"></div>
+				<img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1920" 
+					 alt="Modern gym interior with equipment" 
+					 class="gym-image"
+					 loading="lazy">
+				<div class="image-content container">
+					<h2>State-of-the-art Facilities</h2>
+					<p>Premium equipment. Expert trainers. Your fitness journey starts here.</p>
+				</div>
+			</section>
+
+					<section id="pricing" class="container pricing-section">
+						<h2 class="section-title">Pricing</h2>
+						<p class="muted">Memberships and plans to fit your goals — month-to-month or save with an annual plan.</p>
+
+						<div class="pricing-grid">
+							<article class="pricing-card">
+								<header>
+									<h3>Starter</h3>
+									<div class="price">$29<span>/mo</span></div>
+								</header>
+								<ul>
+									<li>Access to gym equipment</li>
+									<li>Free group classes (select)</li>
+									<li>1 guest pass / month</li>
+								</ul>
+								<a class="btn ghost" href="#">Choose Starter</a>
+							</article>
+
+							<article class="pricing-card">
+								<header>
+									<h3>Pro</h3>
+									<div class="price">$49<span>/mo</span></div>
+								</header>
+								<ul>
+									<li>All Starter features</li>
+									<li>Unlimited classes</li>
+									<li>Access to premium workshops</li>
+								</ul>
+								<a class="btn" href="#">Choose Pro</a>
+							</article>
+
+							<article class="pricing-card">
+								<header>
+									<h3>Elite</h3>
+									<div class="price">$89<span>/mo</span></div>
+								</header>
+								<ul>
+									<li>24/7 access</li>
+									<li>Personal training credits</li>
+									<li>Spa & recovery included</li>
+								</ul>
+								<a class="btn ghost" href="#">Choose Elite</a>
+							</article>
+						</div>
+					</section>
+
+			<section id="contact" class="container contact-section">
+				<h2 class="section-title">Contact Us</h2>
+				<div class="contact-content">
+					<div class="contact-info">
+						<div class="info-item">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="icon">
+								<path d="M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" stroke="currentColor" stroke-width="2"/>
+								<path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="2"/>
+							</svg>
+							<span>hello@ironcore.example</span>
+						</div>
+						<div class="info-item">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="icon">
+								<path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2"/>
+							</svg>
+							<span>(555) 123-4567</span>
+						</div>
+						<div class="info-item">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="icon">
+								<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="2"/>
+								<circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+							</svg>
+							<span>123 Fitness Street, Downtown</span>
+						</div>
+					</div>
+					<form class="contact-form">
+						<div class="form-group">
+							<input type="text" placeholder="Your Name" required>
+						</div>
+						<div class="form-group">
+							<input type="email" placeholder="Email Address" required>
+						</div>
+						<div class="form-group">
+							<textarea placeholder="Your Message" required rows="4"></textarea>
+						</div>
+						<button type="submit" class="btn">Send Message</button>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-info">
+						<div class="brand">
+							<svg class="logo" viewBox="0 0 100 100" aria-hidden="true">
+								<use href="#logo-gradient"/>
+							</svg>
+							<span class="brand-name">IronCore</span>
+						</div>
+						<p class="footer-about">Premium fitness facilities and expert training to help you achieve your goals.</p>
+					</div>
+					<div class="footer-links">
+						<h3>Quick Links</h3>
+						<nav>
+							<a href="#home">Home</a>
+							<a href="#gallery">Gallery</a>
+							<a href="#pricing">Pricing</a>
+							<a href="#contact">Contact</a>
+						</nav>
+					</div>
+					<div class="footer-hours">
+						<h3>Hours</h3>
+						<ul>
+							<li>Mon-Fri: 5:00 - 23:00</li>
+							<li>Sat-Sun: 7:00 - 22:00</li>
+						</ul>
+					</div>
+					<div class="footer-social">
+						<h3>Follow Us</h3>
+						<div class="social-links">
+							<a href="#" aria-label="Instagram" class="social-link">
+								<svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+									<rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5"/>
+									<circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.5"/>
+									<circle cx="17" cy="7" r="1" fill="currentColor"/>
+								</svg>
+							</a>
+							<a href="#" aria-label="Facebook" class="social-link">
+								<svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+									<path d="M15 3h2v3h-2c-1.1 0-2 .9-2 2v2h4l-1 4h-3v7h-4v-7H7v-4h3V8c0-2.8 2.2-5 5-5z" stroke="currentColor" stroke-width="1.5"/>
+								</svg>
+							</a>
+							<a href="#" aria-label="Twitter" class="social-link">
+								<svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+									<path d="M22 4s-1 2-3 3c3-1 3 3 3 3S7 23 4 19c3 0 6-2 6-2s-5-3-4-8c0 0 4 4 9 4V8c0-4 4-5 4-5s2 2 2 4c0 0 3-2 4-3" stroke="currentColor" stroke-width="1.5"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<small>&copy; <span id="year"></span> IronCore Gym. All rights reserved.</small>
+				</div>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
